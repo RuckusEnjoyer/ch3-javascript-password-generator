@@ -13,5 +13,6 @@ To generate a secure and random password, click the Generate Password Button. Yo
 
 ## Credit
 The HTML and CSS for this application was provided by edX. 
+
 ## Link
 https://ruckusenjoyer.github.io/ch3-javascript-password-generator/

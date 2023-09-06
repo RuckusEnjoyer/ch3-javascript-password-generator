@@ -17,13 +17,11 @@ function generatePassword() {
   if (length < 8) {
     alert("Password must be greater than 8 characters!")
     return
-  } else if (length >= 128) {
+  } else if (length > 128) {
     alert("Password must be less than 129!")
     return
-  } else {
-  
   }
-
+  
   if (lowerCase) {
     characters += "abcdefghijklmnopqrstuvwxyz"
   }
