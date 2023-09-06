@@ -3,7 +3,7 @@ var generateBtn = document.querySelector("#generate");
 
 function generatePassword() {
   //misc. variables
-  var chars = "";
+  var characters = "";
   var generatedPassword = "";
 
   //windows popups
@@ -25,26 +25,26 @@ function generatePassword() {
   }
 
   if (lowerCase) {
-    chars += "abcdefghijklmnopqrstuvwxyz"
+    characters += "abcdefghijklmnopqrstuvwxyz"
   }
 
   if (upperCase) {
-    chars += "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    characters += "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
   }
 
   if (numeric) {
-    chars += "1234567890"
+    characters += "1234567890"
   }
 
   if (specialCh) {
-    chars += " !#$%&'()*+,-./:;<=>?@[]^_`{|}~"
+    characters += " !#$%&'()*+,-./:;<=>?@[]^_`{|}~"
   }
 
   //password generator
   for (var i = 0; i <= length; i++) {
-    var passwordRandomizer = Math.floor(Math.random() * chars.length);
+    var passwordRandomizer = Math.floor(Math.random() * characters.length);
     
-    generatedPassword += chars.substring(passwordRandomizer - 1, passwordRandomizer);
+    generatedPassword += characers.substring(passwordRandomizer - 1, passwordRandomizer);
   }
   return generatedPassword;
 }
