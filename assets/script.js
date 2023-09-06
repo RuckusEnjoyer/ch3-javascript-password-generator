@@ -11,7 +11,7 @@ function generatePassword() {
   var lowerCase = confirm("Should it include lowercase letters?");
   var upperCase = confirm("Should it include uppercase letters?");
   var numeric = confirm("Should it include numbers?");
-  var specialCh = confirm("Should it include special characters");
+  var specialCh = confirm("Should it include special characters?");
 
   //adding things to variables
   if (length < 8) {
@@ -44,7 +44,7 @@ function generatePassword() {
   for (var i = 0; i <= length; i++) {
     var passwordRandomizer = Math.floor(Math.random() * characters.length);
     
-    generatedPassword += characers.substring(passwordRandomizer - 1, passwordRandomizer);
+    generatedPassword += characters.substring(passwordRandomizer - 1, passwordRandomizer);
   }
   return generatedPassword;
 }
